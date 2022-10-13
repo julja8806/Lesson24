@@ -33,6 +33,6 @@ public class Human {
     }
 
     public String getInfo() {
-        return name + ": age + " + age;
+        return name + ": age = " + age;
     }
 }

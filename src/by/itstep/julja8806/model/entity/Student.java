@@ -10,8 +10,7 @@ public class Student extends Human {
     }
 
     public Student(String name, int age, double mark) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
         this.mark = mark;
     }
 
@@ -23,6 +22,10 @@ public class Student extends Human {
         if (mark >= MIN_MARK && mark <= MAX_MARK) {
             this.mark = mark;
         }
+    }
+
+    public String getInfo() {
+        return super.getInfo() + "mark = " + mark;
     }
 }
 
