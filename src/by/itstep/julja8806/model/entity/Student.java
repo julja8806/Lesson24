@@ -25,10 +25,24 @@ public class Student extends Human {
         if (mark >= MIN_MARK && mark <= MAX_MARK) {
             note.setMark(mark);
         }
+    }public Student(String name, int age, MarkNote note) {
+        super(name, age);
+        this.mark = mark;
+        note = new MarkNote(mark);
+    }
+
+    public MarkNote getNote() {
+        return note;
+    }
+
+    public void setNote(MarkNote note) {
+        this.note = note;
     }
 
     public String getInfo() {
         return super.getInfo() + "mark = " + mark;
     }
 }
+
+
 
